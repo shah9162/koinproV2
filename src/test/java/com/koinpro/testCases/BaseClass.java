@@ -134,14 +134,17 @@ public class BaseClass {
 	
 	
 	public void UploadImage(String name) throws InterruptedException , FindFailed{
-		String ImageFilepath="C:\\Test_Data\\";
-		String InputFilepath="C:\\Test_Data\\";
+//		String ImageFilepath="C:\\Test_Data\\";
+//		String InputFilepath="C:\\Test_Data\\";
+		
+		String ImageFilepath="C:\\Users\\Mayank Morya\\eclipse-workspace\\koinpro.io\\Image\\";
+		String InputFilepath="C:\\Users\\Mayank Morya\\eclipse-workspace\\koinpro.io\\Image\\";
 		
 		Screen s = new Screen();
 		
 		Pattern FileInputTextBox= new Pattern(ImageFilepath+"FileTestBox.PNG");
 		Pattern OpenButton= new Pattern(ImageFilepath+"OpenButton.PNG");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		s.wait(FileInputTextBox,10);
 		s.type(FileInputTextBox,InputFilepath+name);

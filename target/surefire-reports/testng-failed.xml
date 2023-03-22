@@ -11,8 +11,8 @@
         <methods>
           <include name="AfterSuite"/>
           <include name="BeforeSuite"/>
-          <include name="kycVerification004_UploadWrongImage"/>
           <include name="tearDown"/>
+          <include name="kycVerification001"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.koinpro.testCases.kycUpdate -->

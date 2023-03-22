@@ -78,7 +78,7 @@ public class kycUpdate extends BaseClass{
 	    
 	    kp.uploadImage();
 	    System.out.println("upload image is clicked");
-	    UploadImage("Image.png");
+	    UploadImage("Image01.png");
 	  
 	    kp.enterPancardNumber();
 	    System.out.println("pan number entered");
@@ -173,7 +173,7 @@ public class kycUpdate extends BaseClass{
 		lp.setUserName("aniketjaiswal094@gmail.com");
 		lp.setPassword("MarijuanaPed09xx#");
 		lp.clicksignUp();
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		kp.clickAllKyc();
 		Thread.sleep(2000);
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
