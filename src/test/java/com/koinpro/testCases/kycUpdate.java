@@ -33,7 +33,7 @@ public class kycUpdate extends BaseClass{
 		lp.setPassword(password);
 		lp.clicksignUp();
 //		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		Thread.sleep(2000);
+		Thread.sleep(6000);
 		kp.clicksetting();
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		kp.clickKyc_Link();
@@ -147,7 +147,7 @@ public class kycUpdate extends BaseClass{
 		lp.setUserName(Email);
 		lp.setPassword("Abc@1234");
 		lp.clicksignUp();
-		Thread.sleep(2000);
+		Thread.sleep(6000);
 		kp.clicksetting();
 		kp.clickKyc_Link();
 		kp.reupload_uploadpancard();
@@ -206,7 +206,7 @@ public class kycUpdate extends BaseClass{
 		lp.setUserName(Email);
 		lp.setPassword("Abc@1234");
 		lp.clicksignUp();
-		Thread.sleep(2000);
+		Thread.sleep(6000);
 		kp.clicksetting();
 		kp.clickKyc_Link();
 		kp.reupload_uploadpancard();
@@ -219,9 +219,7 @@ public class kycUpdate extends BaseClass{
 		
 		   if(driver.getPageSource().contains("Failed to upload Image.")) {
 		    	Assert.assertTrue(true);
-		    	
-		    	
-		    }
+		    	}
 		    else {
 		    	Assert.assertTrue(false);
 		    }
