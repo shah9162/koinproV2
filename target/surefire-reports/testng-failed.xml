@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.koinpro.utilities.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="ExchangeApp Test on CHROME(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.koinpro.testCases.ForgetPasswordTest">
+        <methods>
+          <include name="AfterSuite"/>
+          <include name="BeforeSuite"/>
+          <include name="ForgetPassword_Test001"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.koinpro.testCases.ForgetPasswordTest -->
+    </classes>
+  </test> <!-- ExchangeApp Test on CHROME(failed) -->
+</suite> <!-- Failed suite [Suite] -->

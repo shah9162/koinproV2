@@ -1,0 +1,12 @@
+com\koinpro\utilities\ReadConfig.class
+com\koinpro\pageObjects\LoginPage.class
+com\koinpro\utilities\log.class
+com\koinpro\utilities\XLUtils.class
+com\koinpro\pageObjects\SignUp.class
+com\koinpro\testCases\SignupTest.class
+com\koinpro\testCases\firstTest.class
+com\koinpro\utilities\ExtentManager.class
+com\koinpro\utilities\basesclass.class
+com\koinpro\utilities\ListenerClass.class
+com\koinpro\testCases\LoginTest.class
+com\koinpro\testCases\BaseClass.class
