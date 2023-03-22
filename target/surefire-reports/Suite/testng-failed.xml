@@ -7,15 +7,15 @@
   <test thread-count="5" name="ExchangeApp Test on CHROME(failed)" verbose="0">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.koinpro.testCases.ForgetPasswordTest">
+      <class name="com.koinpro.testCases.kycUpdate">
         <methods>
           <include name="AfterSuite"/>
           <include name="BeforeSuite"/>
-          <include name="ForgetPassword_Test001"/>
+          <include name="kycVerification004_UploadWrongImage"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.koinpro.testCases.ForgetPasswordTest -->
+      </class> <!-- com.koinpro.testCases.kycUpdate -->
     </classes>
   </test> <!-- ExchangeApp Test on CHROME(failed) -->
 </suite> <!-- Failed suite [Suite] -->

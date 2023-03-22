@@ -107,10 +107,10 @@ public class kycUpdate extends BaseClass{
 	}
 	
 	@Test
-	public void kycVerification002_rejection() throws InterruptedException, FindFailed {
+	public void kycVerification002_rejectionInAdmin() throws InterruptedException, FindFailed {
 		kycPageLocators kp = new kycPageLocators(driver);
 		LoginPage lp = new LoginPage(driver);
-	driver.get(baseURL);
+	    driver.get(baseURL);
 		lp.setUserName("aniketjaiswal094@gmail.com");
 		lp.setPassword("MarijuanaPed09xx#");
 		lp.clicksignUp();
@@ -122,7 +122,7 @@ public class kycUpdate extends BaseClass{
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Search here...')]")).sendKeys(Email);
 		driver.findElement(By.xpath("//button[normalize-space()='Search']")).click();
 		driver.findElement(By.xpath("//button[normalize-space()='Reject']")).click();
-		String str = "it is for testing purpose";
+		String str = " it is for testing purpose";
 		driver.findElement(By.xpath("//input[@placeholder='Rejection Reason']")).sendKeys(str);
 		driver.findElement(By.xpath("//label[normalize-space()='Pan']")).click();
 		driver.findElement(By.xpath("//button[@class='btn btn-danger'][normalize-space()='Reject']")).click();
@@ -139,7 +139,7 @@ public class kycUpdate extends BaseClass{
 	}
 	
 	@Test
-	public void kycVerification003_rejection() throws InterruptedException, FindFailed {
+	public void kycVerification003_Re_UploadPan() throws InterruptedException, FindFailed {
 		kycPageLocators kp = new kycPageLocators(driver);
 		LoginPage lp = new LoginPage(driver);
 		
@@ -149,9 +149,7 @@ public class kycUpdate extends BaseClass{
 		lp.clicksignUp();
 		Thread.sleep(2000);
 		kp.clicksetting();
-		System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 		kp.clickKyc_Link();
-		System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
 		kp.reupload_uploadpancard();
 		System.out.println("upload pan is clicked");
 		UploadImage("pancard.jpg");
@@ -167,5 +165,66 @@ public class kycUpdate extends BaseClass{
 		    }
 	}
 	
+	@Test
+	public void kycVerification004_rejectionInAdmin() throws InterruptedException, FindFailed {
+		kycPageLocators kp = new kycPageLocators(driver);
+		LoginPage lp = new LoginPage(driver);
+	    driver.get(baseURL);
+		lp.setUserName("aniketjaiswal094@gmail.com");
+		lp.setPassword("MarijuanaPed09xx#");
+		lp.clicksignUp();
+		Thread.sleep(4000);
+		kp.clickAllKyc();
+		Thread.sleep(2000);
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@placeholder,'Search here...')]")));
+		driver.findElement(By.xpath("//input[contains(@placeholder,'Search here...')]")).sendKeys(Email);
+		driver.findElement(By.xpath("//button[normalize-space()='Search']")).click();
+		driver.findElement(By.xpath("//button[normalize-space()='Reject']")).click();
+		String str = " it is for testing purpose";
+		driver.findElement(By.xpath("//input[@placeholder='Rejection Reason']")).sendKeys(str);
+		driver.findElement(By.xpath("//label[normalize-space()='Pan']")).click();
+		driver.findElement(By.xpath("//button[@class='btn btn-danger'][normalize-space()='Reject']")).click();
+		Thread.sleep(2000);
+		
+		if(driver.findElement(By.xpath("//td[normalize-space()='REJECTED']")).getText().contains("REJECTED")){
+		    Assert.assertTrue(true);
+			System.out.println("kyc rejected due to"+str);
+		}
+		else {
+			Assert.assertTrue(false);
+			System.out.println("There is issue with kyc rejection in Admin portal");
+		}
+	}
+	
+	
+	@Test
+	public void kycVerification005_UploadWrongImage() throws InterruptedException, FindFailed {
+		kycPageLocators kp = new kycPageLocators(driver);
+		LoginPage lp = new LoginPage(driver);
+		driver.navigate().to(baseURL);
+		lp.setUserName(Email);
+		lp.setPassword("Abc@1234");
+		lp.clicksignUp();
+		Thread.sleep(2000);
+		kp.clicksetting();
+		kp.clickKyc_Link();
+		kp.reupload_uploadpancard();
+		System.out.println("upload pan is clicked");
+		UploadImage("kids_wear.jpg");
+		Thread.sleep(2000);
+		System.out.println("There is some issue with the image");
+//		driver.findElement(By.cssSelector("button.button[type=button]")).click();
+//		Thread.sleep(2000);
+		
+		   if(driver.getPageSource().contains("Failed to upload Image.")) {
+		    	Assert.assertTrue(true);
+		    	
+		    	
+		    }
+		    else {
+		    	Assert.assertTrue(false);
+		    }
+	}
 
 }
