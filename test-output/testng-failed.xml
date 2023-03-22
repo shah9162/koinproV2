@@ -13,6 +13,7 @@
           <include name="BeforeSuite"/>
           <include name="kycVerification002_rejection"/>
           <include name="tearDown"/>
+          <include name="kycVerification003_rejection"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.koinpro.testCases.kycUpdate -->

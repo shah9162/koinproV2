@@ -17,6 +17,7 @@ import com.koinpro.pageObjects.kycPageLocators;
 
 public class kycUpdate extends BaseClass{
 	 String Email =	randomEmail();
+	 
 	@Test
 	public void kycVerification001() throws InterruptedException, FindFailed {
 		kycPageLocators kp = new kycPageLocators(driver);
@@ -109,14 +110,12 @@ public class kycUpdate extends BaseClass{
 	public void kycVerification002_rejection() throws InterruptedException, FindFailed {
 		kycPageLocators kp = new kycPageLocators(driver);
 		LoginPage lp = new LoginPage(driver);
-		driver.get(baseURL);
+	driver.get(baseURL);
 		lp.setUserName("aniketjaiswal094@gmail.com");
 		lp.setPassword("MarijuanaPed09xx#");
 		lp.clicksignUp();
 		Thread.sleep(4000);
-		System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 		kp.clickAllKyc();
-		System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
 		Thread.sleep(2000);
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@placeholder,'Search here...')]")));
@@ -130,22 +129,30 @@ public class kycUpdate extends BaseClass{
 		Thread.sleep(2000);
 		
 		if(driver.findElement(By.xpath("//td[normalize-space()='REJECTED']")).getText().contains("REJECTED")){
+		    Assert.assertTrue(true);
 			System.out.println("kyc rejected due to"+str);
 		}
 		else {
+			Assert.assertTrue(false);
 			System.out.println("There is issue with kyc rejection in Admin portal");
 		}
+	}
+	
+	@Test
+	public void kycVerification003_rejection() throws InterruptedException, FindFailed {
+		kycPageLocators kp = new kycPageLocators(driver);
+		LoginPage lp = new LoginPage(driver);
 		
-		//login to customer portal
-		driver.navigate().to(baseURL);
-		Thread.sleep(2000);
+		driver.get(baseURL);
 		lp.setUserName(Email);
 		lp.setPassword("Abc@1234");
 		lp.clicksignUp();
 		Thread.sleep(2000);
 		kp.clicksetting();
+		System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 		kp.clickKyc_Link();
-		kp.uploadpancard();
+		System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+		kp.reupload_uploadpancard();
 		System.out.println("upload pan is clicked");
 		UploadImage("pancard.jpg");
 		Thread.sleep(5000);
@@ -159,5 +166,6 @@ public class kycUpdate extends BaseClass{
 		    	Assert.assertTrue(false);
 		    }
 	}
+	
 
 }

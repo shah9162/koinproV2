@@ -79,6 +79,10 @@ public class kycPageLocators {
 	@CacheLookup
 	WebElement pancard;
                 	
+	@FindBy(xpath="//span[@class='input-group-text bg-danger cursorPointer']")
+	@CacheLookup
+	WebElement reuploadpancard;
+	
 	
 	@FindBy(xpath="//input[contains(@placeholder,'Enter Pan Number.')]")
 	@CacheLookup
@@ -168,6 +172,10 @@ public class kycPageLocators {
 	//
 	public void uploadpancard() {
 		pancard.click();
+	}
+	
+	public void reupload_uploadpancard() {
+		reuploadpancard.click();
 	}
 	
 	public void enterPancardNumber() {
