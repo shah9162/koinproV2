@@ -33,9 +33,9 @@ public class kycUpdate extends BaseClass {
 		lp.setPassword(password);
 		lp.clicksignUp();
 //		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[normalize-space()='Profile']")));
+        Thread.sleep(6000);
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[normalize-space()='Profile']")));
 
 		kp.clicksetting();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
