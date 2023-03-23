@@ -25,7 +25,7 @@ public class ForgetPasswordTest extends BaseClass {
 	@Test
 	public void ForgetPassword_Test001() throws InterruptedException, IOException {
 		ForgetPasswordLocators fp = new ForgetPasswordLocators(driver);
-
+		System.out.println("Forget password Email is : " + email);
 		// signUp a new user
 		RegisterUser(email);
 

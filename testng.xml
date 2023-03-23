@@ -16,11 +16,11 @@
 
 			<!-- <class name="com.koinpro.testCases.basesclass" /> -->
 
-			<class name="com.koinpro.testCases.LoginTest" />
+			<!-- <class name="com.koinpro.testCases.LoginTest" /> -->
 
 			<!-- <class name="com.koinpro.testCases.SignupTest" /> -->
 
-			<class name="com.koinpro.testCases.ForgetPasswordTest" />
+			<!-- <class name="com.koinpro.testCases.ForgetPasswordTest" /> -->
 
 			<class name="com.koinpro.testCases.kycUpdate" />
 

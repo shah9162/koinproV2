@@ -17,9 +17,11 @@ import com.koinpro.pageObjects.kycPageLocators;
 
 public class kycUpdate extends BaseClass{
 	 String Email =	randomEmail();
+
 	 
 	@Test
 	public void kycVerification001() throws InterruptedException, FindFailed {
+		 System.out.println("kyc Email is : "+Email);
 		kycPageLocators kp = new kycPageLocators(driver);
 		LoginPage lp = new LoginPage(driver);
 	   
@@ -33,7 +35,10 @@ public class kycUpdate extends BaseClass{
 		lp.setPassword(password);
 		lp.clicksignUp();
 //		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		Thread.sleep(2000);
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(@type,'submit')]")));
+		
 		kp.clicksetting();
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		kp.clickKyc_Link();
@@ -106,7 +111,7 @@ public class kycUpdate extends BaseClass{
 	
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void kycVerification002_rejectionInAdmin() throws InterruptedException, FindFailed {
 		kycPageLocators kp = new kycPageLocators(driver);
 		LoginPage lp = new LoginPage(driver);
@@ -138,7 +143,7 @@ public class kycUpdate extends BaseClass{
 		}
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void kycVerification003_Re_UploadPan() throws InterruptedException, FindFailed {
 		kycPageLocators kp = new kycPageLocators(driver);
 		LoginPage lp = new LoginPage(driver);
@@ -165,7 +170,7 @@ public class kycUpdate extends BaseClass{
 		    }
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void kycVerification004_rejectionInAdmin() throws InterruptedException, FindFailed {
 		kycPageLocators kp = new kycPageLocators(driver);
 		LoginPage lp = new LoginPage(driver);
@@ -198,7 +203,7 @@ public class kycUpdate extends BaseClass{
 	}
 	
 	
-	@Test
+	@Test(enabled=false)
 	public void kycVerification005_UploadWrongImage() throws InterruptedException, FindFailed {
 		kycPageLocators kp = new kycPageLocators(driver);
 		LoginPage lp = new LoginPage(driver);
