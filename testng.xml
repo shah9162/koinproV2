@@ -12,26 +12,26 @@
 
 		<classes>
 
-		 <!--	<class name="com.koinpro.testCases.firstTest" />  -->
+			<!-- <class name="com.koinpro.testCases.firstTest" /> -->
 
-		<!-- <class name="com.koinpro.testCases.basesclass" /> -->
+			<!-- <class name="com.koinpro.testCases.basesclass" /> -->
 
-	    <!--   <class name="com.koinpro.testCases.LoginTest" /> -->
+			<class name="com.koinpro.testCases.LoginTest" />
 
-		<!--   <class name="com.koinpro.testCases.SignupTest" />   -->
-		
-		<!--   <class name="com.koinpro.testCases.ForgetPasswordTest" />   --> 
-		  
-		    <class name="com.koinpro.testCases.kycUpdate" />  
-		
-			</classes>
-		</test> 
-	
-	
-	
-		
-		
-		<test name="ExchangeApp Test on edge">
+			<!-- <class name="com.koinpro.testCases.SignupTest" /> -->
+
+			<class name="com.koinpro.testCases.ForgetPasswordTest" />
+
+			<class name="com.koinpro.testCases.kycUpdate" />
+
+		</classes>
+	</test>
+
+
+
+
+
+	<test name="ExchangeApp Test on edge">
 		<parameter name="browser" value="edge" />
 
 		<classes>
@@ -40,12 +40,12 @@
 
 			<!-- <class name="com.koinpro.testCases.basesclass" /> -->
 
-		  <!--   <class name="com.koinpro.testCases.LoginTest" />   -->
+			<!-- <class name="com.koinpro.testCases.LoginTest" /> -->
 
-			<!-- <class name="com.koinpro.testCases.SignupTest" />  -->
-			
-	     	<!-- <class name="com.koinpro.testCases.ForgetPasswordTest" />    -->	
+			<!-- <class name="com.koinpro.testCases.SignupTest" /> -->
+
+			<!-- <class name="com.koinpro.testCases.ForgetPasswordTest" /> -->
 		</classes>
-	</test> 
-	
+	</test>
+
 </suite> 

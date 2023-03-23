@@ -18,25 +18,24 @@ import org.testng.annotations.Test;
 import com.koinpro.pageObjects.ForgetPasswordLocators;
 import com.koinpro.pageObjects.LoginPage;
 
-public class ForgetPasswordTest extends BaseClass{
-	
+public class ForgetPasswordTest extends BaseClass {
+
 	String email = randomEmail();
-	
+
 	@Test
 	public void ForgetPassword_Test001() throws InterruptedException, IOException {
-		ForgetPasswordLocators fp= new ForgetPasswordLocators(driver);
-		
-		//signUp a new user
+		ForgetPasswordLocators fp = new ForgetPasswordLocators(driver);
+
+		// signUp a new user
 		RegisterUser(email);
-		
-		//email Verification 
+
+		// email Verification
 		verify_Newly_AddedCustomer(email);
-		 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		driver.navigate().to(baseURL);
 		Thread.sleep(2000);
-		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //		logger.info("ulr is opened");
 		fp.clickForgetLink();
 //		logger.info("Forget password link clicked");
@@ -45,120 +44,127 @@ public class ForgetPasswordTest extends BaseClass{
 		fp.clickGetLink();
 //		logger.info("Get link is clecked");
 		Thread.sleep(3000);
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='cursorPointer']")));
 
-		if(driver.getPageSource().contains("Reset Link send to your mail registered mail id.")) {
+		if (driver.getPageSource().contains("Reset Link send to your mail registered mail id.")) {
 			System.out.println("link sent on registered mail id");
-			}
-		else {
+		} else {
 			System.out.println("link sent on registered mail id");
 		}
-		
-//		ChromeOptions options = new ChromeOptions();
-//		options.addArguments("--incognito");
-//		options.addArguments("--remote-allow-origins=*");
-//		ChromeDriver Indriver = new ChromeDriver(options);
-		
+
 		driver.get("https://yopmail.com/");
-		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		 WebElement emailbox= driver.findElement(By.id("login"));
-	        emailbox.sendKeys(email);
-	        emailbox.submit();
-	        
-//	        WebDriverWait waitex = new WebDriverWait(driver,Duration.ofSeconds(60,000));
-//			waitex.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[normalize-space()='Reset My Password']")));
-	        try {
-	            Thread.sleep(20000); // 120,000 milliseconds = 2 minutes
-	        } catch (InterruptedException e) {
-	            e.printStackTrace();
-	        }
-	        int size = driver.findElements(By.tagName("iframe")).size();
-	        System.out.println("total frame : "+size);
-	      
-	        driver.switchTo().frame(2);
-	      
-	       WebElement link= driver.findElement(By.xpath("//a[normalize-space()='Reset My Password']"));
-	       if(link.isEnabled()) {
-	     	  System.out.println("forget password link is opening");
-	       }
-	       else {
-	     	  System.out.println("there is problem with forget password link");
-	       }
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		WebElement emailbox = driver.findElement(By.id("login"));
+		emailbox.sendKeys(email);
+		emailbox.submit();
 
-	         link.click();
-	         Thread.sleep(3000);
-//	      String newurl=   driver.getCurrentUrl();
-//	      driver.navigate().to(newurl);
-	         
-	         //Enter new password 
-	         driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("Abc@12345");
-	         driver.findElement(By.xpath("//input[@placeholder='Confirm Password']")).sendKeys("Abc@12345");
-	         driver.findElement(By.xpath("//button[@class='btn btn-block btn-primary btn-lg']")).click();
-	         Thread.sleep(2000);
-	         if(driver.getPageSource().contains("Password Reset")) {
-	        	 System.out.println("password reset success Now login with current password");
-	         }
-	         else {
-	        	 System.out.println("password reset failed");
-	         }
-	         
-	         String windows= driver.getWindowHandle();
-	         System.out.println("window handle value"+windows);
-	          if(driver.switchTo().window(windows).getTitle().contains("ifmail")) {
-	          	driver.close();
-	          }
-	         
-	         //Again login to the Account with new password
-	         driver.get(baseURL);
-	         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-	         LoginPage lp = new LoginPage(driver);
-	 		driver.get(baseURL);
-	 		lp.setUserName(email);
-	 		lp.setPassword("Abc@12345");
-	 		//		lp.eyeButton();
-	 		lp.clicksignUp();
+		try {
+			Thread.sleep(4000); // 120,000 milliseconds = 2 minutes
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		int size = driver.findElements(By.tagName("iframe")).size();
+		System.out.println("total frame : " + size);
 
-	 		Thread.sleep(2000);
-	 	
-	 		if (driver.getPageSource().contains("Logged In Successfully.")) {
-	 			Assert.assertTrue(true);
-	 			
-	 		} else {
-	 			Assert.assertTrue(false);
-	 		}
+		driver.switchTo().frame(2);
+
+		String link = driver.findElement(By.xpath("//a[normalize-space()='Reset My Password']")).getAttribute("href");
+		System.out.println("url of the forget password :" + link);
+		Thread.sleep(2000);
+
+		driver.get(link);
+		WebElement pass = driver.findElement(By.xpath("//input[@placeholder='Password']"));
+		pass.click();
+		pass.sendKeys("Abc@12345");
+		WebElement Con_pass = driver.findElement(By.xpath("//input[@placeholder='Confirm Password']"));
+		Con_pass.click();
+		Con_pass.sendKeys("Abc@12345");
+		driver.findElement(By.xpath("//button[@class='btn btn-block btn-primary btn-lg']")).click();
+		Thread.sleep(2000);
+		if (driver.getPageSource().contains("Password Reset")) {
+			System.out.println("password reset success Now login with current password");
+		} else {
+			System.out.println("password reset failed");
+		}
+
+		String windows = driver.getWindowHandle();
+		System.out.println("window handle value " + windows);
+		if (driver.switchTo().window(windows).getTitle().contains("ifmail")) {
+			driver.close();
+		}
+
+		// Again login to the Account with new password
+		driver.get(baseURL);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		LoginPage lp = new LoginPage(driver);
+		driver.get(baseURL);
+		lp.setUserName(email);
+		lp.setPassword("Abc@12345");
+		// lp.eyeButton();
+		lp.clicksignUp();
+
+		Thread.sleep(2000);
+
+		if (driver.getPageSource().contains("Logged In Successfully.")) {
+			Assert.assertTrue(true);
+
+		} else {
+			Assert.assertTrue(false);
+		}
 	}
-	
-	
-	@Test(enabled=false)
+
+	@Test
+	public void checkLogin_With_previousPassword() {
+		driver.get(baseURL);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		LoginPage lp = new LoginPage(driver);
+		driver.get(baseURL);
+		lp.setUserName(email);
+		lp.setPassword("Abc@1234");
+		// lp.eyeButton();
+		lp.clicksignUp();
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		if (driver.getPageSource().contains("Invalid Password")) {
+			Assert.assertTrue(true);
+
+		} else {
+			Assert.assertTrue(false);
+		}
+	}
+
+	@Test
 	public void ForgetPassword_Test002_Timecheck() throws InterruptedException, IOException {
-		ForgetPasswordLocators fp= new ForgetPasswordLocators(driver);
+		ForgetPasswordLocators fp = new ForgetPasswordLocators(driver);
 		driver.get(baseURL);
 //		logger.info("ulr is opened");
 		fp.clickForgetLink();
 //		logger.info("Forget password link clicked");
-		fp.enterforgetemail("asdf23@yopmail.com");
+		fp.enterforgetemail(email);
 //		logger.info("foget password email is provided");
 		fp.clickGetLink();
 //		logger.info("Get link is clecked");
 		Thread.sleep(2000);
 //		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		
-	if(driver.getPageSource().contains("Link recently sent, try after sometime.")) {
-		Assert.assertTrue(true);
+
+		if (driver.getPageSource().contains("Link recently sent, try after sometime.")) {
+			Assert.assertTrue(true);
 //		logger.info("Forget password passed");
-	}
-	else {
+		} else {
 //	    logger.info("Forget password failed");
-	    Assert.assertTrue(false);
-	    }
-		
+			Assert.assertTrue(false);
+		}
+
 	}
-	
-	
-	@Test(enabled=false)
+
+	@Test
 	public void ForgetPassword_Test003_NoUser() throws InterruptedException, IOException {
-		ForgetPasswordLocators fp= new ForgetPasswordLocators(driver);
+		ForgetPasswordLocators fp = new ForgetPasswordLocators(driver);
 		driver.get(baseURL);
 //		logger.info("ulr is opened");
 		fp.clickForgetLink();
@@ -169,23 +175,21 @@ public class ForgetPasswordTest extends BaseClass{
 //		logger.info("Get link is clecked");
 		Thread.sleep(2000);
 //		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		
-	if(driver.getPageSource().contains("No user found with this email.")) {
-		Assert.assertTrue(true);
+
+		if (driver.getPageSource().contains("No user found with this email.")) {
+			Assert.assertTrue(true);
 //		logger.info("Forget password passed");
-	}
-	else {
+		} else {
 //	    logger.info("Forget password failed");
-	
-	    Assert.assertTrue(false);
-	    }
-		
+
+			Assert.assertTrue(false);
+		}
+
 	}
-	
-	
-	@Test(enabled=false)
+
+	@Test
 	public void ForgetPassword_Test004_invalid_Email_Format() throws InterruptedException, IOException {
-		ForgetPasswordLocators fp= new ForgetPasswordLocators(driver);
+		ForgetPasswordLocators fp = new ForgetPasswordLocators(driver);
 		driver.get(baseURL);
 //		logger.info("ulr is opened");
 		fp.clickForgetLink();
@@ -196,44 +200,16 @@ public class ForgetPasswordTest extends BaseClass{
 //		logger.info("Get link is clecked");
 		Thread.sleep(2000);
 //		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		
-	if(driver.getPageSource().contains("Email is Invalid.")) {
-		Assert.assertTrue(true);
+
+		if (driver.getPageSource().contains("Email is Invalid.")) {
+			Assert.assertTrue(true);
 //		logger.info("Forget password passed");
-	}
-	else {
+		} else {
 //	    logger.info("Forget password failed");
-		
-	    Assert.assertTrue(false);
-	    }
-		
-	}
-	
-	
-	@Test(enabled=false)
-	public void ForgetPassword_Test005_ResendLink() throws InterruptedException, IOException {
-		ForgetPasswordLocators fp= new ForgetPasswordLocators(driver);
-		driver.get(baseURL);
-//		logger.info("ulr is opened");
-		fp.clickForgetLink();
-//		logger.info("Forget password link clicked");
-		fp.enterforgetemail("asdf23@yopmail.com");
-//		logger.info("foget password email is provided");
-		fp.clickResendLink();
-//		logger.info("Get link is clecked");
-		Thread.sleep(3000);
-//		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		
-	if(driver.getPageSource().contains("Link recently sent, try after sometime.")) {
-		Assert.assertTrue(true);
-//		logger.info("Forget password passed");
-	}
-	else {
-//	    logger.info("Forget password failed");
-	
-	    Assert.assertTrue(false);
-	    }
-		
+
+			Assert.assertTrue(false);
+		}
+
 	}
 
 }

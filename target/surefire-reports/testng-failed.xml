@@ -7,15 +7,40 @@
   <test thread-count="5" name="ExchangeApp Test on CHROME(failed)" verbose="0">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.koinpro.testCases.LoginTest">
+        <methods>
+          <include name="AfterSuite"/>
+          <include name="BeforeSuite"/>
+          <include name="TC_LoginTest_005"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.koinpro.testCases.LoginTest -->
       <class name="com.koinpro.testCases.kycUpdate">
         <methods>
           <include name="AfterSuite"/>
           <include name="BeforeSuite"/>
+          <include name="kycVerification003_Re_UploadPan"/>
           <include name="tearDown"/>
           <include name="kycVerification001"/>
+          <include name="kycVerification005_UploadWrongImage"/>
+          <include name="kycVerification002_rejectionInAdmin"/>
+          <include name="kycVerification004_rejectionInAdmin"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.koinpro.testCases.kycUpdate -->
+      <class name="com.koinpro.testCases.ForgetPasswordTest">
+        <methods>
+          <include name="AfterSuite"/>
+          <include name="ForgetPassword_Test003_NoUser"/>
+          <include name="BeforeSuite"/>
+          <include name="checkLogin_With_previousPassword"/>
+          <include name="ForgetPassword_Test001"/>
+          <include name="tearDown"/>
+          <include name="ForgetPassword_Test002_Timecheck"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.koinpro.testCases.ForgetPasswordTest -->
     </classes>
   </test> <!-- ExchangeApp Test on CHROME(failed) -->
 </suite> <!-- Failed suite [Suite] -->

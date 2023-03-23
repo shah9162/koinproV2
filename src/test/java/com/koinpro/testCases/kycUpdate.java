@@ -33,7 +33,7 @@ public class kycUpdate extends BaseClass{
 		lp.setPassword(password);
 		lp.clicksignUp();
 //		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		Thread.sleep(6000);
+		Thread.sleep(2000);
 		kp.clicksetting();
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		kp.clickKyc_Link();
@@ -85,7 +85,7 @@ public class kycUpdate extends BaseClass{
 	      
 	    kp.enterAadharnumber();
 	    System.out.println("Aadhar entered");
-	    Thread.sleep(5000);
+	    Thread.sleep(6000);
 	    
 	    JavascriptExecutor js = (JavascriptExecutor) driver;
 	    js.executeScript("window.scrollBy(0,300)");
@@ -147,7 +147,7 @@ public class kycUpdate extends BaseClass{
 		lp.setUserName(Email);
 		lp.setPassword("Abc@1234");
 		lp.clicksignUp();
-		Thread.sleep(6000);
+		Thread.sleep(2000);
 		kp.clicksetting();
 		kp.clickKyc_Link();
 		kp.reupload_uploadpancard();
@@ -173,7 +173,7 @@ public class kycUpdate extends BaseClass{
 		lp.setUserName("aniketjaiswal094@gmail.com");
 		lp.setPassword("MarijuanaPed09xx#");
 		lp.clicksignUp();
-		Thread.sleep(6000);
+		Thread.sleep(4000);
 		kp.clickAllKyc();
 		Thread.sleep(2000);
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -206,7 +206,7 @@ public class kycUpdate extends BaseClass{
 		lp.setUserName(Email);
 		lp.setPassword("Abc@1234");
 		lp.clicksignUp();
-		Thread.sleep(6000);
+		Thread.sleep(2000);
 		kp.clicksetting();
 		kp.clickKyc_Link();
 		kp.reupload_uploadpancard();

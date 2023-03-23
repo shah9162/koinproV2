@@ -7,16 +7,15 @@
   <test thread-count="5" name="ExchangeApp Test on CHROME(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.koinpro.testCases.kycUpdate">
+      <class name="com.koinpro.testCases.demo">
         <methods>
           <include name="AfterSuite"/>
           <include name="BeforeSuite"/>
-          <include name="kycVerification002_rejection"/>
           <include name="tearDown"/>
-          <include name="kycVerification003_rejection"/>
+          <include name="test"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.koinpro.testCases.kycUpdate -->
+      </class> <!-- com.koinpro.testCases.demo -->
     </classes>
   </test> <!-- ExchangeApp Test on CHROME(failed) -->
 </suite> <!-- Failed suite [Suite] -->

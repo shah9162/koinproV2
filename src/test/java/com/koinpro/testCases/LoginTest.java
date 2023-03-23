@@ -14,7 +14,6 @@ import com.koinpro.utilities.ListenerClass;
 import com.koinpro.utilities.XLUtils;
 
 public class LoginTest extends BaseClass {
-	
 
 	public static String path = System.getProperty("user.dir")
 			+ "/src/test/java/com/koinpro/testData/Koinpro_Testcases.xlsx";
@@ -25,22 +24,21 @@ public class LoginTest extends BaseClass {
 		driver.get(baseURL);
 		lp.setUserName("msd916288@gmail.com");
 		lp.setPassword("Abc@1234");
-		//		lp.eyeButton();
+		// lp.eyeButton();
 		lp.clicksignUp();
 
 		Thread.sleep(2000);
-	
+
 		if (driver.getPageSource().contains("Logged In Successfully.")) {
 			Assert.assertTrue(true);
-			
+
 		} else {
 			Assert.assertTrue(false);
 		}
-	
+
 //	ExtentManager.test.createNode("login with invalid password");
-    
+
 	}
-	
 
 	@Test
 	public void TC_LoginTest_002() throws InterruptedException, IOException {
@@ -48,16 +46,16 @@ public class LoginTest extends BaseClass {
 		driver.get(baseURL);
 		lp.setUserName("msd916288@gmail.com");
 		lp.setPassword("Abc@5248");
-		//		lp.eyeButton();
+		// lp.eyeButton();
 		lp.clicksignUp();
 
 		Thread.sleep(2000);
 
 		if (driver.getPageSource().contains("Invalid Password")) {
-			
+
 			Assert.assertTrue(true);
 		} else {
-		   Assert.assertTrue(false);
+			Assert.assertTrue(false);
 		}
 
 	}
@@ -68,7 +66,7 @@ public class LoginTest extends BaseClass {
 		driver.get(baseURL);
 		lp.setUserName("msd5416288@gmail.com");
 		lp.setPassword("Abc@1234");
-		//		lp.eyeButton();
+		// lp.eyeButton();
 		lp.clicksignUp();
 
 		Thread.sleep(2000);
@@ -87,7 +85,7 @@ public class LoginTest extends BaseClass {
 		driver.get(baseURL);
 		lp.setUserName("msd5416288@gmail.123");
 		lp.setPassword("Abc@1234");
-		//		lp.eyeButton();
+		// lp.eyeButton();
 		lp.clicksignUp();
 
 		Thread.sleep(2000);
@@ -106,10 +104,10 @@ public class LoginTest extends BaseClass {
 		driver.get(baseURL);
 		lp.setUserName("msd916288@gmail.com");
 		lp.setPassword("abc@123");
-		//		lp.eyeButton();
+		// lp.eyeButton();
 		lp.clicksignUp();
 
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 
 		if (driver.getPageSource().contains("Invalid Password")) {
 			Assert.assertTrue(true);
@@ -125,7 +123,7 @@ public class LoginTest extends BaseClass {
 		driver.get(baseURL);
 		lp.setUserName("");
 		lp.setPassword("Abc@1234");
-		//		lp.eyeButton();
+		// lp.eyeButton();
 		lp.clicksignUp();
 
 		Thread.sleep(2000);
@@ -144,7 +142,7 @@ public class LoginTest extends BaseClass {
 		driver.get(baseURL);
 		lp.setUserName("msd916288@gmail.com");
 		lp.setPassword("");
-		//		lp.eyeButton();
+		// lp.eyeButton();
 		lp.clicksignUp();
 
 		Thread.sleep(2000);
