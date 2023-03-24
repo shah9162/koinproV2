@@ -1,5 +1,7 @@
 package com.koinpro.pageObjects;
 
+import java.io.File;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

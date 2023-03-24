@@ -24,16 +24,16 @@ public class kycUpdate extends BaseClass {
 		kycPageLocators kp = new kycPageLocators(driver);
 		LoginPage lp = new LoginPage(driver);
 
-		RegisterUser(Email);
-		verify_Newly_AddedCustomer(Email);
+//		RegisterUser(Email);
+//		verify_Newly_AddedCustomer(Email);
 
 		driver.navigate().to(baseURL);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		lp.setUserName(Email);
+		lp.setUserName("dnzU4241@yopmail.com");
 		lp.setPassword(password);
 		lp.clicksignUp();
 //		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-        Thread.sleep(6000);
+		Thread.sleep(6000);
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[normalize-space()='Profile']")));
 
@@ -41,32 +41,31 @@ public class kycUpdate extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		kp.clickKyc_Link();
 
-		if (driver.findElement(By.xpath("//div[@class='card ng-star-inserted']")).getText()
-				.contains("Complete user details section in order to start KYC!!!")) {
-			System.out.println("Complete user details section in order to start KYC!!! ");
-			kp.clickProfile_Link();
-		} else {
-			System.out.println("there is some problem with script");
-		}
-		;
+//		if (driver.findElement(By.xpath("//div[@class='card ng-star-inserted']")).getText()
+//				.contains("Complete user details section in order to start KYC!!!")) {
+//			System.out.println("Complete user details section in order to start KYC!!! ");
+//			kp.clickProfile_Link();
+//		} else {
+//			System.out.println("there is some problem with script");
+//		}
 
 		// fill profile section
-		kp.enterAddress("Gomti nagar");
-		kp.enterPincode("226010");
-		kp.enterCity("Lucknow");
-		kp.enterCounter("India");
-		kp.enterState("UP");
-		kp.clickSaveProfileButton();
-
-		if (driver.getPageSource().contains("Details Successfully Updated.")) {
-			System.out.println("Profile details updated successfully noe start doing kyc mannual or E-Kyc");
-		}
-
-		kp.clickKyc_Link();
-		kp.clickManualKyc();
+//		kp.enterAddress("Gomti nagar");
+//		kp.enterPincode("226010");
+//		kp.enterCity("Lucknow");
+//		kp.enterCounter("India");
+//		kp.enterState("UP");
+//		kp.clickSaveProfileButton();
+//
+//		if (driver.getPageSource().contains("Details Successfully Updated.")) {
+//			System.out.println("Profile details updated successfully noe start doing kyc mannual or E-Kyc");
+//		}
+//
+//		kp.clickKyc_Link();
+//		kp.clickManualKyc();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		System.out.println("Manual kuc page is now Opening");
-
+		Thread.sleep(2000);
 		kp.uploadpancard();
 		System.out.println("upload pan is clicked");
 		UploadImage("pancard.jpg");
@@ -93,13 +92,12 @@ public class kycUpdate extends BaseClass {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,300)");
 
-		Thread.sleep(1000);
-//	    kp.clickSubmitButton();
+		Thread.sleep(1000); // kp.clickSubmitButton();
 		driver.findElement(By.cssSelector("button.button[type=button]")).click();
 		;
 
-		Thread.sleep(2000);
-//	     driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
+		Thread.sleep(2000); //
+		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 
 		if (driver.findElement(By.xpath("//div[@class='card-body my-cus']")).getText()
 				.contains("KYC verification is in progress !!!")) {
@@ -118,7 +116,7 @@ public class kycUpdate extends BaseClass {
 		lp.setUserName("aniketjaiswal094@gmail.com");
 		lp.setPassword("MarijuanaPed09xx#");
 		lp.clicksignUp();
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		kp.clickAllKyc();
 		Thread.sleep(2000);
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -150,7 +148,7 @@ public class kycUpdate extends BaseClass {
 		lp.setUserName(Email);
 		lp.setPassword("Abc@1234");
 		lp.clicksignUp();
-		Thread.sleep(2000);
+		Thread.sleep(6000);
 		kp.clicksetting();
 		kp.clickKyc_Link();
 		kp.reupload_uploadpancard();
@@ -176,7 +174,7 @@ public class kycUpdate extends BaseClass {
 		lp.setUserName("aniketjaiswal094@gmail.com");
 		lp.setPassword("MarijuanaPed09xx#");
 		lp.clicksignUp();
-		Thread.sleep(4000);
+		Thread.sleep(6000);
 		kp.clickAllKyc();
 		Thread.sleep(2000);
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -207,7 +205,7 @@ public class kycUpdate extends BaseClass {
 		lp.setUserName(Email);
 		lp.setPassword("Abc@1234");
 		lp.clicksignUp();
-		Thread.sleep(2000);
+		Thread.sleep(6000);
 		kp.clicksetting();
 		kp.clickKyc_Link();
 		kp.reupload_uploadpancard();
