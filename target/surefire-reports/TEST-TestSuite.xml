@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="125.794" tests="17" errors="0" skipped="0" failures="10">
+<testsuite name="TestSuite" time="239.249" tests="17" errors="0" skipped="0" failures="6">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Mayank Morya\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf9518624035799100994.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Mayank Morya\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16147808409420671777.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Mayank Morya\AppData\Local\Microsoft\WindowsApps;C:\Users\Mayank Morya\.dotnet\tools;C:\Users\Mayank Morya\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mayank Morya\AppData\Local\Microsoft\WindowsApps;C:\Users\Mayank Morya\.dotnet\tools;C:\Users\Mayank Morya\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\6.0\bin;C:\apache-maven-3.9.0\bin;C:\apache-maven-3.9.0\bin;;."/>
     <property name="jdk.debug" value="release"/>
@@ -56,43 +56,25 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="m2e.build.project.data.socket.port" value="50229"/>
+    <property name="m2e.build.project.data.socket.port" value="59580"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TC_LoginTest_001" classname="com.koinpro.testCases.LoginTest" time="4.635"/>
-  <testcase name="TC_LoginTest_002" classname="com.koinpro.testCases.LoginTest" time="4.335"/>
-  <testcase name="TC_LoginTest_003" classname="com.koinpro.testCases.LoginTest" time="5.574"/>
-  <testcase name="TC_LoginTest_004" classname="com.koinpro.testCases.LoginTest" time="4.271"/>
-  <testcase name="TC_LoginTest_005" classname="com.koinpro.testCases.LoginTest" time="5.314">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.koinpro.testCases.LoginTest.TC_LoginTest_005(LoginTest.java:115)
-</failure>
-    <system-out><![CDATA[Chrome driver lounch successfully
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 15211
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 23, 2023 11:34:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
-]]></system-err>
-  </testcase>
-  <testcase name="TC_LoginTest_006" classname="com.koinpro.testCases.LoginTest" time="4.969"/>
-  <testcase name="TC_LoginTest_007" classname="com.koinpro.testCases.LoginTest" time="4.294"/>
-  <testcase name="ForgetPassword_Test001" classname="com.koinpro.testCases.ForgetPasswordTest" time="15.4">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Click here&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [aee59cf7e61d9675204ac58b94dc7aa6, findElement {using=link text, value=Click here}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: aee59cf7e61d9675204ac58b94dc7aa6" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Click here"}
+  <testcase name="TC_LoginTest_001" classname="com.koinpro.testCases.LoginTest" time="5.79"/>
+  <testcase name="TC_LoginTest_002" classname="com.koinpro.testCases.LoginTest" time="4.341"/>
+  <testcase name="TC_LoginTest_003" classname="com.koinpro.testCases.LoginTest" time="4.524"/>
+  <testcase name="TC_LoginTest_004" classname="com.koinpro.testCases.LoginTest" time="4.616"/>
+  <testcase name="TC_LoginTest_005" classname="com.koinpro.testCases.LoginTest" time="5.201"/>
+  <testcase name="TC_LoginTest_006" classname="com.koinpro.testCases.LoginTest" time="4.264"/>
+  <testcase name="TC_LoginTest_007" classname="com.koinpro.testCases.LoginTest" time="4.328"/>
+  <testcase name="ForgetPassword_Test001" classname="com.koinpro.testCases.ForgetPasswordTest" time="34.016">
+    <failure message="invalid argument: uniqueContextId not found&#10;  (Session info: chrome=111.0.5563.65)&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [19cbed5989160a40bec6f79e481f705e, findElement {using=xpath, value=//a[normalize-space()=&apos;Reset My Password&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59795/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 19cbed5989160a40bec6f79e481f705e" type="org.openqa.selenium.InvalidArgumentException">org.openqa.selenium.InvalidArgumentException: invalid argument: uniqueContextId not found
   (Session info: chrome=111.0.5563.65)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aee59cf7e61d9675204ac58b94dc7aa6, findElement {using=link text, value=Click here}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50450/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aee59cf7e61d9675204ac58b94dc7aa6
+Command: [19cbed5989160a40bec6f79e481f705e, findElement {using=xpath, value=//a[normalize-space()='Reset My Password']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59795}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59795/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 19cbed5989160a40bec6f79e481f705e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -109,59 +91,29 @@ Session ID: aee59cf7e61d9675204ac58b94dc7aa6
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at com.koinpro.testCases.BaseClass.verify_Newly_AddedCustomer(BaseClass.java:95)
-	at com.koinpro.testCases.ForgetPasswordTest.ForgetPassword_Test001(ForgetPasswordTest.java:33)
+	at com.koinpro.testCases.ForgetPasswordTest.ForgetPassword_Test001(ForgetPasswordTest.java:72)
 </failure>
     <system-out><![CDATA[Chrome driver lounch successfully
-signUp failed
+Forget password Email is : uZAk2939@yopmail.com
+signUp successfully
+total frame : 3
+emai verification success
+window handle valueAF48E05DDB1ADE198BE07A66A037ACF4
+link sent on registered mail id
 total frame : 3
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 31766
+    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 30506
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 23, 2023 11:34:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 24, 2023 3:02:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
 ]]></system-err>
   </testcase>
-  <testcase name="ForgetPassword_Test002_Timecheck" classname="com.koinpro.testCases.ForgetPasswordTest" time="4.327">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.koinpro.testCases.ForgetPasswordTest.ForgetPassword_Test002_Timecheck(ForgetPasswordTest.java:160)
-</failure>
-    <system-out><![CDATA[Chrome driver lounch successfully
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 10560
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 23, 2023 11:35:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
-]]></system-err>
-  </testcase>
-  <testcase name="ForgetPassword_Test003_NoUser" classname="com.koinpro.testCases.ForgetPasswordTest" time="5.107">
-    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.koinpro.testCases.ForgetPasswordTest.ForgetPassword_Test003_NoUser(ForgetPasswordTest.java:185)
-</failure>
-    <system-out><![CDATA[Chrome driver lounch successfully
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 30630
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 23, 2023 11:35:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
-]]></system-err>
-  </testcase>
-  <testcase name="ForgetPassword_Test004_invalid_Email_Format" classname="com.koinpro.testCases.ForgetPasswordTest" time="4.689"/>
-  <testcase name="checkLogin_With_previousPassword" classname="com.koinpro.testCases.ForgetPasswordTest" time="5.157">
+  <testcase name="ForgetPassword_Test002_Timecheck" classname="com.koinpro.testCases.ForgetPasswordTest" time="5.168"/>
+  <testcase name="ForgetPassword_Test003_NoUser" classname="com.koinpro.testCases.ForgetPasswordTest" time="5.378"/>
+  <testcase name="ForgetPassword_Test004_invalid_Email_Format" classname="com.koinpro.testCases.ForgetPasswordTest" time="5.039"/>
+  <testcase name="checkLogin_With_previousPassword" classname="com.koinpro.testCases.ForgetPasswordTest" time="6.256">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)
@@ -171,63 +123,66 @@ WARNING: Unable to find an exact match for CDP version 111, so returning the clo
 </failure>
     <system-out><![CDATA[Chrome driver lounch successfully
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 30147
+    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 22108
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 23, 2023 11:35:32 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 24, 2023 3:02:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
 ]]></system-err>
   </testcase>
-  <testcase name="kycVerification001" classname="com.koinpro.testCases.kycUpdate" time="15.302">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Click here&quot;}&#10;  (Session info: chrome=111.0.5563.65)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cc7e17da7b30fc1146dfb7ca0ef2627d, findElement {using=link text, value=Click here}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50653}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50653/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cc7e17da7b30fc1146dfb7ca0ef2627d" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Click here"}
-  (Session info: chrome=111.0.5563.65)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc7e17da7b30fc1146dfb7ca0ef2627d, findElement {using=link text, value=Click here}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50653}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50653/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc7e17da7b30fc1146dfb7ca0ef2627d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at com.koinpro.testCases.BaseClass.verify_Newly_AddedCustomer(BaseClass.java:95)
-	at com.koinpro.testCases.kycUpdate.kycVerification001(kycUpdate.java:27)
+  <testcase name="kycVerification001" classname="com.koinpro.testCases.kycUpdate" time="86.574">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.koinpro.testCases.kycUpdate.kycVerification001(kycUpdate.java:105)
 </failure>
     <system-out><![CDATA[Chrome driver lounch successfully
-signUp failed
+kyc Email is : iCoF9001@yopmail.com
+signUp successfully
 total frame : 3
+emai verification success
+window handle value14684EFCEAFBFBEB73D1D20CCB0FF057
+Complete user details section in order to start KYC!!! 
+Manual kuc page is now Opening
+upload pan is clicked
+[log] CLICK on L[145,665]@S(0) (560 msec)
+[log]  TYPE "C:\Users\Mayank Morya\eclipse-workspace\koinpro.io\Image\pancard.jpg"
+[log] CLICK on L[821,606]@S(0) (571 msec)
+upload aadhar front is clicked
+[log] CLICK on L[145,665]@S(0) (562 msec)
+[log]  TYPE "C:\Users\Mayank Morya\eclipse-workspace\koinpro.io\Image\AadharFront.jpg"
+[log] CLICK on L[821,606]@S(0) (578 msec)
+upload aadhar back is clicked
+[log] CLICK on L[145,665]@S(0) (567 msec)
+[log]  TYPE "C:\Users\Mayank Morya\eclipse-workspace\koinpro.io\Image\AadharBack.jpg"
+[log] CLICK on L[821,606]@S(0) (568 msec)
+upload image is clicked
+[log] CLICK on L[145,665]@S(0) (579 msec)
+[log]  TYPE "C:\Users\Mayank Morya\eclipse-workspace\koinpro.io\Image\Image01.png"
+[log] CLICK on L[821,606]@S(0) (576 msec)
+pan number entered
+Aadhar entered
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 2731
+    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 20232
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 23, 2023 11:35:38 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 24, 2023 3:03:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
 ]]></system-err>
   </testcase>
-  <testcase name="kycVerification002_rejectionInAdmin" classname="com.koinpro.testCases.kycUpdate" time="11.4">
-    <failure message="java.lang.reflect.InvocationTargetException&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f0876920f56cc0375e02e95a8be60d2d, actions {actions=[org.openqa.selenium.interactions.Sequence@35e07e19]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50732/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f0876920f56cc0375e02e95a8be60d2d" type="org.openqa.selenium.json.JsonException">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+  <testcase name="kycVerification002_rejectionInAdmin" classname="com.koinpro.testCases.kycUpdate" time="7.995">
+    <failure message="element click intercepted: Element &lt;button _ngcontent-pre-c163=&quot;&quot; type=&quot;button&quot; class=&quot;btn btn-warning&quot; style=&quot;height: 35px; margin-top: 10px; margin-right: 15px; color: white;&quot;&gt;...&lt;/button&gt; is not clickable at point (1230, 107). Other element would receive the click: &lt;div class=&quot;ng-tns-c60-1 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-success ng-animating&quot; toast-component=&quot;&quot; style=&quot;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=111.0.5563.65)&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [97706446c1c70dadd1364bdcfdf5e823, clickElement {id=40363e49-025e-4da2-9d89-4b9b7ca84ac1}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60149}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60149/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (97706446c1c70dadd1364bdcfdf5e823)] -&gt; xpath: //button[normalize-space()=&apos;Search&apos;]]&#10;Session ID: 97706446c1c70dadd1364bdcfdf5e823" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-pre-c163="" type="button" class="btn btn-warning" style="height: 35px; margin-top: 10px; margin-right: 15px; color: white;">...</button> is not clickable at point (1230, 107). Other element would receive the click: <div class="ng-tns-c60-1 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-success ng-animating" toast-component="" style="">...</div>
+  (Session info: chrome=111.0.5563.65)
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f0876920f56cc0375e02e95a8be60d2d, actions {actions=[org.openqa.selenium.interactions.Sequence@35e07e19]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50732/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f0876920f56cc0375e02e95a8be60d2d
+Command: [97706446c1c70dadd1364bdcfdf5e823, clickElement {id=40363e49-025e-4da2-9d89-4b9b7ca84ac1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60149}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60149/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (97706446c1c70dadd1364bdcfdf5e823)] -> xpath: //button[normalize-space()='Search']]
+Session ID: 97706446c1c70dadd1364bdcfdf5e823
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -240,73 +195,30 @@ Session ID: f0876920f56cc0375e02e95a8be60d2d
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:260)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:209)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:619)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-	at com.koinpro.pageObjects.kycPageLocators.clickAllKyc(kycPageLocators.java:120)
-	at com.koinpro.testCases.kycUpdate.kycVerification002_rejectionInAdmin(kycUpdate.java:118)
-</failure>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.koinpro.testCases.kycUpdate.kycVerification002_rejectionInAdmin(kycUpdate.java:124)
+]]></failure>
     <system-out><![CDATA[Chrome driver lounch successfully
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 31814
+    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 18674
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 23, 2023 11:35:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 24, 2023 3:04:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
 ]]></system-err>
   </testcase>
-  <testcase name="kycVerification003_Re_UploadPan" classname="com.koinpro.testCases.kycUpdate" time="9.353">
-    <failure message="java.lang.reflect.InvocationTargetException&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3cf9028ad7af40552b77ac36beb7fede, actions {actions=[org.openqa.selenium.interactions.Sequence@4cd7e993]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50763}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50763/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3cf9028ad7af40552b77ac36beb7fede" type="org.openqa.selenium.json.JsonException">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+  <testcase name="kycVerification003_Re_UploadPan" classname="com.koinpro.testCases.kycUpdate" time="25.836">
+    <failure message="element click intercepted: Element is not clickable at point (424, 674)&#10;  (Session info: chrome=111.0.5563.65)&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [53bc79597c94f073b4eaa19abcdcd85a, clickElement {id=b275bb18-7f6e-420d-a62a-cc4a8203f975}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60187/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (53bc79597c94f073b4eaa19abcdcd85a)] -&gt; css selector: button.button[type=button]]&#10;Session ID: 53bc79597c94f073b4eaa19abcdcd85a" type="org.openqa.selenium.ElementClickInterceptedException">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (424, 674)
+  (Session info: chrome=111.0.5563.65)
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3cf9028ad7af40552b77ac36beb7fede, actions {actions=[org.openqa.selenium.interactions.Sequence@4cd7e993]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50763}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50763/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3cf9028ad7af40552b77ac36beb7fede
+Command: [53bc79597c94f073b4eaa19abcdcd85a, clickElement {id=b275bb18-7f6e-420d-a62a-cc4a8203f975}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60187}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60187/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (53bc79597c94f073b4eaa19abcdcd85a)] -> css selector: button.button[type=button]]
+Session ID: 53bc79597c94f073b4eaa19abcdcd85a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -319,73 +231,34 @@ Session ID: 3cf9028ad7af40552b77ac36beb7fede
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:260)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:209)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:619)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-	at com.koinpro.pageObjects.kycPageLocators.clicksetting(kycPageLocators.java:114)
-	at com.koinpro.testCases.kycUpdate.kycVerification003_Re_UploadPan(kycUpdate.java:151)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.koinpro.testCases.kycUpdate.kycVerification003_Re_UploadPan(kycUpdate.java:157)
 </failure>
     <system-out><![CDATA[Chrome driver lounch successfully
+upload pan is clicked
+[log] CLICK on L[1207,312]@S(0) (573 msec)
+[log]  TYPE "C:\Users\Mayank Morya\eclipse-workspace\koinpro.io\Image\pancard.jpg"
+[log] CLICK on L[821,606]@S(0) (574 msec)
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 41132
+    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 12583
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 23, 2023 11:36:08 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 24, 2023 3:04:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
 ]]></system-err>
   </testcase>
-  <testcase name="kycVerification004_rejectionInAdmin" classname="com.koinpro.testCases.kycUpdate" time="11.463">
-    <failure message="java.lang.reflect.InvocationTargetException&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a2d6904767dad71cc7706b6b55bcef90, actions {actions=[org.openqa.selenium.interactions.Sequence@2b99c937]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50794/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a2d6904767dad71cc7706b6b55bcef90" type="org.openqa.selenium.json.JsonException">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+  <testcase name="kycVerification004_rejectionInAdmin" classname="com.koinpro.testCases.kycUpdate" time="8.068">
+    <failure message="element click intercepted: Element &lt;button _ngcontent-kuy-c163=&quot;&quot; type=&quot;button&quot; class=&quot;btn btn-warning&quot; style=&quot;height: 35px; margin-top: 10px; margin-right: 15px; color: white;&quot;&gt;...&lt;/button&gt; is not clickable at point (1230, 107). Other element would receive the click: &lt;div class=&quot;ng-tns-c60-1 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-success ng-animating&quot; toast-component=&quot;&quot; style=&quot;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=111.0.5563.65)&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5f04f116a2bf5b9945eb86cfb21b2aa1, clickElement {id=a7f1c3b4-1765-46c2-ad56-b561644626bb}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60233}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60233/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (5f04f116a2bf5b9945eb86cfb21b2aa1)] -&gt; xpath: //button[normalize-space()=&apos;Search&apos;]]&#10;Session ID: 5f04f116a2bf5b9945eb86cfb21b2aa1" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-kuy-c163="" type="button" class="btn btn-warning" style="height: 35px; margin-top: 10px; margin-right: 15px; color: white;">...</button> is not clickable at point (1230, 107). Other element would receive the click: <div class="ng-tns-c60-1 ng-star-inserted ng-trigger ng-trigger-flyInOut ngx-toastr toast-success ng-animating" toast-component="" style="">...</div>
+  (Session info: chrome=111.0.5563.65)
 Build info: version: '4.7.1', revision: 'c6795baf1a3'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2d6904767dad71cc7706b6b55bcef90, actions {actions=[org.openqa.selenium.interactions.Sequence@2b99c937]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50794/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a2d6904767dad71cc7706b6b55bcef90
+Command: [5f04f116a2bf5b9945eb86cfb21b2aa1, clickElement {id=a7f1c3b4-1765-46c2-ad56-b561644626bb}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60233}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60233/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (5f04f116a2bf5b9945eb86cfb21b2aa1)] -> xpath: //button[normalize-space()='Search']]
+Session ID: 5f04f116a2bf5b9945eb86cfb21b2aa1
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -398,142 +271,19 @@ Session ID: a2d6904767dad71cc7706b6b55bcef90
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:260)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:209)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:619)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-	at com.koinpro.pageObjects.kycPageLocators.clickAllKyc(kycPageLocators.java:120)
-	at com.koinpro.testCases.kycUpdate.kycVerification004_rejectionInAdmin(kycUpdate.java:177)
-</failure>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.koinpro.testCases.kycUpdate.kycVerification004_rejectionInAdmin(kycUpdate.java:182)
+]]></failure>
     <system-out><![CDATA[Chrome driver lounch successfully
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 13223
+    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 32372
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 23, 2023 11:36:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 24, 2023 3:05:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
 ]]></system-err>
   </testcase>
-  <testcase name="kycVerification005_UploadWrongImage" classname="com.koinpro.testCases.kycUpdate" time="10.204">
-    <failure message="java.lang.reflect.InvocationTargetException&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5d6737e52c27fe9def40c47a41179cf4, actions {actions=[org.openqa.selenium.interactions.Sequence@5342eec5]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50827/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5d6737e52c27fe9def40c47a41179cf4" type="org.openqa.selenium.json.JsonException">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.7.1', revision: 'c6795baf1a3'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5d6737e52c27fe9def40c47a41179cf4, actions {actions=[org.openqa.selenium.interactions.Sequence@5342eec5]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\MAYANK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50827/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5d6737e52c27fe9def40c47a41179cf4
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy19.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:260)
-	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:209)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
-	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
-	at org.openqa.selenium.json.Json.toJson(Json.java:42)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:619)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-	at com.koinpro.pageObjects.kycPageLocators.clicksetting(kycPageLocators.java:114)
-	at com.koinpro.testCases.kycUpdate.kycVerification005_UploadWrongImage(kycUpdate.java:210)
-</failure>
-    <system-out><![CDATA[Chrome driver lounch successfully
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 29599
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Mar 23, 2023 11:36:31 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 108
-]]></system-err>
-  </testcase>
+  <testcase name="kycVerification005_UploadWrongImage" classname="com.koinpro.testCases.kycUpdate" time="21.855"/>
 </testsuite>

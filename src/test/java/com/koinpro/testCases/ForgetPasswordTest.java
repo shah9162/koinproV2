@@ -60,7 +60,7 @@ public class ForgetPasswordTest extends BaseClass {
 		emailbox.submit();
 
 		try {
-			Thread.sleep(4000); // 120,000 milliseconds = 2 minutes
+			Thread.sleep(5000); // 120,000 milliseconds = 2 minutes
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

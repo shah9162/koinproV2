@@ -87,7 +87,7 @@ public class BaseClass {
 		WebElement emailbox = driver.findElement(By.id("login"));
 		emailbox.sendKeys(str);
 		emailbox.submit();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		int size = driver.findElements(By.tagName("iframe")).size();
 		System.out.println("total frame : " + size);
 
@@ -131,8 +131,8 @@ public class BaseClass {
 //		String ImageFilepath="C:\\Test_Data\\";
 //		String InputFilepath="C:\\Test_Data\\";
 
-		String ImageFilepath = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\koinpro_github\\Image\\";
-		String InputFilepath = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\koinpro_github\\Image\\";
+		String ImageFilepath = System.getProperty("user.dir") + "\\Image\\";
+		String InputFilepath = System.getProperty("user.dir") + "\\Image\\";
 
 		Screen s = new Screen(0);
 
