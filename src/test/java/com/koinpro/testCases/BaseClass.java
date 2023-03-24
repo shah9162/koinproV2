@@ -134,7 +134,7 @@ public class BaseClass {
 		String ImageFilepath = System.getProperty("user.dir") + "\\Image\\";
 		String InputFilepath = System.getProperty("user.dir") + "\\Image\\";
 
-		Screen s = new Screen(-1);
+		Screen s = new Screen(1);
 
 		Pattern FileInputTextBox = new Pattern(ImageFilepath + "FileTestBox.PNG");
 		Pattern OpenButton = new Pattern(ImageFilepath + "OpenButton.PNG");
