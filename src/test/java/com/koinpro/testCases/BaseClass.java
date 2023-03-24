@@ -131,8 +131,8 @@ public class BaseClass {
 //		String ImageFilepath="C:\\Test_Data\\";
 //		String InputFilepath="C:\\Test_Data\\";
 
-		String ImageFilepath = System.getProperty("user.dir") + "\\Image\\";
-		String InputFilepath = System.getProperty("user.dir") + "\\Image\\";
+		String ImageFilepath = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\koinpro_github\\Image\\";
+		String InputFilepath = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\koinpro_github\\Image\\";
 
 		Screen s = new Screen(0);
 

@@ -2,12 +2,12 @@
 <testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-24T11:18:57 IST" name="Suite" finished-at="2023-03-24T11:20:16 IST" duration-ms="79060">
+  <suite started-at="2023-03-24T11:44:40 IST" name="Suite" finished-at="2023-03-24T11:46:02 IST" duration-ms="81179">
     <groups>
     </groups>
-    <test started-at="2023-03-24T11:18:57 IST" name="ExchangeApp Test on CHROME" finished-at="2023-03-24T11:20:16 IST" duration-ms="79007">
+    <test started-at="2023-03-24T11:44:40 IST" name="ExchangeApp Test on CHROME" finished-at="2023-03-24T11:46:01 IST" duration-ms="81154">
       <class name="com.koinpro.testCases.kycUpdate">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.kycUpdate@3c3d9b6b]" started-at="2023-03-24T11:18:57 IST" name="setUp" finished-at="2023-03-24T11:18:59 IST" duration-ms="2434" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.koinpro.testCases.kycUpdate@3c3d9b6b]" started-at="2023-03-24T11:44:40 IST" name="setUp" finished-at="2023-03-24T11:44:43 IST" duration-ms="2494" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="kycVerification001()[pri:0, instance:com.koinpro.testCases.kycUpdate@3c3d9b6b]" started-at="2023-03-24T11:18:59 IST" name="kycVerification001" finished-at="2023-03-24T11:20:14 IST" duration-ms="75225" status="FAIL">
+        <test-method signature="kycVerification001()[pri:0, instance:com.koinpro.testCases.kycUpdate@3c3d9b6b]" started-at="2023-03-24T11:44:43 IST" name="kycVerification001" finished-at="2023-03-24T11:46:00 IST" duration-ms="77301" status="FAIL">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError
@@ -60,19 +60,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- kycVerification001 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.kycUpdate@3c3d9b6b]" started-at="2023-03-24T11:20:15 IST" name="tearDown" finished-at="2023-03-24T11:20:16 IST" duration-ms="1155" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.koinpro.testCases.kycUpdate@3c3d9b6b]" started-at="2023-03-24T11:46:00 IST" name="tearDown" finished-at="2023-03-24T11:46:01 IST" duration-ms="1164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.koinpro.testCases.kycUpdate -->
     </test> <!-- ExchangeApp Test on CHROME -->
-    <test started-at="2023-03-24T11:20:16 IST" name="ExchangeApp Test on edge" finished-at="2023-03-24T11:20:16 IST" duration-ms="0">
+    <test started-at="2023-03-24T11:46:02 IST" name="ExchangeApp Test on edge" finished-at="2023-03-24T11:46:02 IST" duration-ms="0">
       <class name="com.koinpro.testCases.kycUpdate">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.koinpro.testCases.kycUpdate@3c3d9b6b]" started-at="2023-03-24T11:18:56 IST" name="BeforeSuite" finished-at="2023-03-24T11:18:57 IST" duration-ms="652" status="PASS">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.koinpro.testCases.kycUpdate@3c3d9b6b]" started-at="2023-03-24T11:44:40 IST" name="BeforeSuite" finished-at="2023-03-24T11:44:40 IST" duration-ms="656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:com.koinpro.testCases.kycUpdate@3c3d9b6b]" started-at="2023-03-24T11:20:16 IST" name="AfterSuite" finished-at="2023-03-24T11:20:16 IST" duration-ms="330" status="PASS">
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:com.koinpro.testCases.kycUpdate@3c3d9b6b]" started-at="2023-03-24T11:46:02 IST" name="AfterSuite" finished-at="2023-03-24T11:46:02 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterSuite -->
