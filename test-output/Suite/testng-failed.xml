@@ -7,13 +7,25 @@
   <test thread-count="5" name="ExchangeApp Test on CHROME(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.koinpro.testCases.Bank_VerifyTest">
+        <methods>
+          <include name="AfterSuite"/>
+          <include name="bankVerfication01"/>
+          <include name="BeforeSuite"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.koinpro.testCases.Bank_VerifyTest -->
       <class name="com.koinpro.testCases.kycUpdate">
         <methods>
           <include name="AfterSuite"/>
           <include name="BeforeSuite"/>
-          <include name="kycVerification001"/>
+          <include name="kycVerification003_Re_UploadPan"/>
           <include name="tearDown"/>
+          <include name="kycVerification005_UploadWrongImage"/>
+          <include name="kycVerification002_rejectionInAdmin"/>
           <include name="setUp"/>
+          <include name="kycVerification004_rejectionInAdmin"/>
         </methods>
       </class> <!-- com.koinpro.testCases.kycUpdate -->
     </classes>

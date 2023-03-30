@@ -37,6 +37,10 @@ public class kycPageLocators {
 	@CacheLookup
 	WebElement kyclink;
 	
+	@FindBy(xpath="//span[normalize-space()='Bank Verify']")
+	@CacheLookup
+	WebElement bankVerify;
+	
 	@FindBy(xpath="//span[normalize-space()='PROFILE']")
 	@CacheLookup
 	WebElement profileLink;
@@ -125,6 +129,10 @@ public class kycPageLocators {
 	
 	public void clickKyc_Link() {
 		kyclink.click();
+	}
+	
+	public void clickBankVerify_Link() {
+		bankVerify.click();
 	}
 	
 	public void clickManualKyc() {

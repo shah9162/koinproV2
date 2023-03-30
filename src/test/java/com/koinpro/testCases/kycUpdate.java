@@ -122,6 +122,7 @@ public class kycUpdate extends BaseClass {
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@placeholder,'Search here...')]")));
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Search here...')]")).sendKeys(Email);
 		driver.findElement(By.xpath("//button[normalize-space()='Search']")).click();
+		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//button[normalize-space()='Reject']")).click();
 		String str = " it is for testing purpose";
 		driver.findElement(By.xpath("//input[@placeholder='Rejection Reason']")).sendKeys(str);
