@@ -84,7 +84,7 @@ public class Bank_VerifyTest extends BaseClass {
 			Thread.sleep(4000);
 			if (driver.getPageSource().contains("Invalid Beneficiary Bank Account number")
 					|| driver.getPageSource().contains("bankName is required")) {
-				System.out.println("Bank verificatio failed with Bank name : "+element);
+				System.out.println("Bank verificatio failed with Bank name : " + element);
 				Assert.assertTrue(true);
 			}
 

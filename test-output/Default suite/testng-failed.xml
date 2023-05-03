@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.koinpro.testCases.kycUpdate">
+      <class name="com.koinpro.testCases.check_Company_SupportAnd_SocialmediaLinks">
         <methods>
           <include name="AfterSuite"/>
           <include name="BeforeSuite"/>
+          <include name="checkLinks"/>
           <include name="tearDown"/>
-          <include name="kycVerification001"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.koinpro.testCases.kycUpdate -->
+      </class> <!-- com.koinpro.testCases.check_Company_SupportAnd_SocialmediaLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

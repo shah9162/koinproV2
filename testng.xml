@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" thread-count="3" parallel="tests">
+
 
 	<listeners>
 		<listener class-name="com.koinpro.utilities.ListenerClass"></listener>
@@ -18,16 +19,22 @@
 
 			<!-- <class name="com.koinpro.testCases.SignupTest" /> -->
 
-			 <class name="com.koinpro.testCases.LoginTest" /> 
+			<!-- <class name="com.koinpro.testCases.LoginTest" /> -->
 
-			 <class name="com.koinpro.testCases.ForgetPasswordTest" /> 
+			<!-- <class name="com.koinpro.testCases.ForgetPasswordTest" /> -->
 
-			<!--  <class name="com.koinpro.testCases.kycUpdate" /> --> 
+			<!-- <class name="com.koinpro.testCases.kycUpdate" /> -->
 
-			<class name="com.koinpro.testCases.Bank_VerifyTest" />
+			<!-- <class name="com.koinpro.testCases.Bank_VerifyTest" /> -->
+
+			<!-- <class name="com.koinpro.testCases.InrDeposite_Test" /> -->
+
+			<class
+				name="com.koinpro.testCases.check_Company_SupportAnd_SocialmediaLinks" />
 
 		</classes>
 	</test>
+	
 
 
 

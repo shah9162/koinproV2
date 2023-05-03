@@ -11,15 +11,23 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class kycPageLocators {
-	WebDriver ldriver;
+	WebDriver mdriver;
 	public kycPageLocators(WebDriver rdriver){
-		ldriver=rdriver;
+		mdriver=rdriver;
 		PageFactory.initElements(rdriver,this);
 	}
 	
 	@FindBy(xpath="//a[normalize-space()='Profile']")
 	@CacheLookup
-	WebElement mainMenu;
+	WebElement mainMenu; // 
+	
+	@FindBy(xpath="//a[normalize-space()='Wallet']")
+	@CacheLookup
+	WebElement wallet;
+	
+	@FindBy(xpath="//li[contains(a/text(),'INR')]")
+	@CacheLookup
+	WebElement inr;
 	
 	@FindBy(xpath="//a[normalize-space()='Users']")
 	@CacheLookup
@@ -116,13 +124,19 @@ public class kycPageLocators {
 	//button[@class='button']
 	
 	public void clicksetting() {
-		Actions actions = new Actions(ldriver);
+		Actions actions = new Actions(mdriver);
 		actions.moveToElement(mainMenu).perform();
 		subMenu.click();
 	}
 	
+	public void clickInr() {
+		Actions actions = new Actions(mdriver);
+		actions.moveToElement(wallet).perform();
+		inr.click();
+	}
+	
 	public void clickAllKyc() {
-		Actions actions = new Actions(ldriver);
+		Actions actions = new Actions(mdriver);
 		actions.moveToElement(Users).perform();
 		AllKyc.click();
 	}
