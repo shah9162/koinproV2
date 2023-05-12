@@ -45,7 +45,6 @@ public class check_Company_SupportAnd_SocialmediaLinks extends BaseClass {
 				driver.switchTo().window(parentWindowHandle);
 				Set<String> handles = driver.getWindowHandles();
 				List<String> myList = new ArrayList<String>(handles);
-
 				System.out.println("aaaaaaaaaa : " + myList);
 				if (myList.size() == 2) {
 					for (int j = 1; j < myList.size(); j++) {
